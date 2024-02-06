@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.text-p{
+    text-align: center;
+    background-color: #faedcd;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+h3{
+    text-align: center;
+    padding: 10px;
+    font-family:'Lucida Sans';
+}
+.contenedor{
+    background-color: #d4a373;
+    color: white;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconos{
+    width: 40px;
+    cursor: pointer;
+}
+
+/*Barra de navegacion 2*/
+.contenedor2{
+    background-color: #fefae0;
+}
+
+.navbar2{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.logotipo{
+    display: flex;
+}
+
+.navbar2 ul li{
+    list-style: none;
+    display: inline-block; /*Un enlace alado del otro*/
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family:'Trebuchet MS';
+    font-size: 1.2rem;
+}
+
+/*Efecto de linea animada*/
+.navbar2 ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #1B414A;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar2 ul li:hover::before{
+    width: 100%;
+}
+
+.contenido{
+    display: flex;
+    margin: 60px;
+}
+
+.articulos{
+	width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.secciones{
+    /*display: flex;*/
+    align-items: center;
+    padding: 40px;
+}
+
+.formato{
+    width: 500px;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #d4a373;
+    color: white;
+    margin-top: 40px;
+}
+
+.anexos{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.anexos a{
+    text-decoration: none;
+    color: black;
+}
